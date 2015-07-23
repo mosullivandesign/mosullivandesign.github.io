@@ -1,0 +1,287 @@
+
+/*---- CUSTOM/OVERRIDES ----*/
+
+body {
+	padding-top: 0px;
+	padding-bottom: 40px;
+	background-color:#95A5A5;
+	color:#2B3D4D;
+}
+
+.container {
+	background-image: url(../images/hero_BG3.jpg);
+	background-repeat:no-repeat;
+	padding:0 10px;
+	background-color:#EBEFF1;
+}
+
+
+
+/* Header */
+
+.navbar .brand {
+    color: #FFFFFF !important;
+    font-family: VerbCondRegular-Bold;
+    font-style: normal;
+    font-weight: normal;
+}
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
+	box-shadow: 0 1px 10px transparent;
+	border-width: 0;/*border-bottom:5px solid #08253F;*/
+}
+.navbar-inverse .navbar-inner {
+	background-color: #08253F!important;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#08253F), to(#08253F));
+	background-image: -webkit-linear-gradient(top, #08253F, #08253F);
+	background-image: -moz-linear-gradient(top, #08253F, #08253F);
+	background-image: -o-linear-gradient(top, #08253F, #08253F);
+	background-image: linear-gradient(to bottom, #08253F, #08253F);
+	background-repeat: repeat-x;
+	border-color: #08253F;
+}
+
+/*links*/	
+	
+ul.nav li a {
+	color:#fff!important;
+	text-decoration:none;
+	/* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	/* ...and now for the proper property */
+  transition:.5s;
+}
+ul.nav li a:hover, ul.nav li a:focus {
+	color:#3498db!important;
+	text-decoration:none;
+}
+
+ul.nav li a i {margin-right:2px!important; 
+/* FIRST (order is important) */
+opacity: 0.70;
+	-webkit-opacity: 0.70;
+	-moz-opacity: 0.70;
+	/* SECOND (IE8) */
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	/* THIRD (IE7) */
+filter: alpha(opacity=70);
+
+
+
+ }
+
+
+/*BIG TYPE hero unit*/
+
+#hero-unit {
+	background-color: transparent;
+	border-radius: 0;
+	color: inherit;
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 30px;
+	margin-bottom: 0px;
+	padding: 0px;
+	height:338px;
+}
+#hero-unit h1 {
+	color:#fff;
+	letter-spacing: 0px;
+	margin:0;
+	padding:60px 10px 60px 0px;
+	font-size:72px;
+	line-height:110%;
+	font-family: VerbCondExtralight-Italic;
+	font-weight: normal!important;
+	font-style: normal;
+}
+
+/*About */
+
+h2 {
+	color:#fff;
+	font-size:12px;
+	background-color:#BF392B;
+	padding:4px 10px;
+	margin:30px 10px 20px -10px;
+	display:inline-block;
+	text-transform:uppercase;
+	font-family: VerbCondExtrabold-Italic;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	line-height:20px;
+	clear:both;
+}
+#Main p {
+	font-size:21px;
+	line-height:150%;
+	font-family: VerbCondLight;
+	font-weight: normal;
+	font-style: normal;
+}
+#philosophy div {
+	font-size:15px;
+	line-height:150%;
+	font-family: VerbCondLight;
+	font-weight: normal;
+	font-style: normal;
+}
+h4 {
+	font-family: VerbCondExtrabold-Italic;
+	font-weight: normal;
+	font-style: normal;
+	margin:20px 0 10px 0;
+	font-size:14px;
+}
+
+/*WORK */
+
+/* Grid */
+
+#work .row-fluid {margin-bottom:20px; }
+
+#work .row-fluid .span3 a {text-decoration:none !important;}
+
+#work div div {border:1px solid #ccc;height:150px;}
+
+/*row 1*/
+#work #r1 div:nth-child(1) { background: #fff; background-image:url(../images/thumbs/gdc_thumb.jpg)}
+#work #r1 div:nth-child(2) { background: #fff;background-image:url(../images/thumbs/ford_thumb.jpg) }
+#work #r1 div:nth-child(3) { background: #fff;background-image:url(../images/thumbs/pepper_thumb.jpg) }
+#work #r1 div:nth-child(4) { background: #fff;background-image:url(../images/thumbs/ensure_thumb.jpg) }
+/*row 2*/
+#work #r2 div:nth-child(1) { background: #fff;background-image:url(../images/thumbs/HAEhope_thumb.jpg) }
+#work #r2 div:nth-child(2) { background: #fff;background-image:url(../images/thumbs/dyax_thumb.jpg) }
+#work #r2 div:nth-child(3) { background: #fff;background-image:url(../images/thumbs/BB_thumb.jpg) }
+#work #r2 div:nth-child(4) { background: #fff;background-image:url(../images/thumbs/pediaSure_thumb.jpg) }
+/*row 3*/
+#work #r3 div:nth-child(1) { background: #fff;background-image:url(../images/thumbs/savo_thumb.jpg) }
+#work #r3 div:nth-child(2) { background: #fff;background-image:url(../images/thumbs/logos_thumb.jpg) }
+
+
+/*Rollover*/
+	
+	.rollover {
+	width:100%;
+	height:100%;
+	text-align:left!important;
+	/* FIRST (order is important) */
+opacity: 0.0;
+	/* SECOND (IE8) */
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	/* THIRD (IE7) */
+filter: alpha(opacity=0);
+	-o-transition:.25s;
+	-ms-transition:.25s;
+	-moz-transition:.25s;
+	-webkit-transition:.25s;
+	/* ...and now for the proper property */
+  transition:.25s;
+}
+.rollover:hover, rollover:active, rollover:focus {
+	/* FIRST (order is important) */
+opacity: 0.90;
+	-webkit-opacity: 0.90;
+	-moz-opacity: 0.90;
+	/* SECOND (IE8) */
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=96)";
+	/* THIRD (IE7) */
+filter: alpha(opacity=96);
+}
+.rollover h3 {
+	font-size:16px!important;
+	font-family: VerbCondSemibold;
+	font-weight: normal;
+	font-style: normal;
+	color:#fff!important;
+	margin:0!important;
+	padding:40px 10px 0 20px!important;
+	line-height:21px;
+}
+.rollover span {
+	font-size:16px;
+	font-family: VerbCondExtralight-Italic;
+	display:block;
+	font-weight: normal;
+	font-style: normal;
+	color:#fff!important;
+	margin:0!important;
+	padding:0px 10px 10px 20px!important;
+}
+
+#work div div .rollover { background: #d35400!important;border:none !important; }
+
+
+/*project */
+
+#title h3 {font-size:22px!important;
+	font-family: VerbCondSemibold;
+	font-weight: normal;
+	font-style: normal;
+	margin:0;
+	line-height:25px; }
+	
+#title p {font-size:22px;
+	font-family: VerbCondLight;
+	font-weight: normal;
+	font-style: normal;
+	line-height:25px;
+	margin:0 0 20px 0; }
+	
+#title p.role, #brief p, #solution p {	font-size:14px;font-family: VerbCondLight;
+	font-weight: normal;
+	font-style: normal;}	
+	
+#title p.role span {font-size:14px;font-family: VerbCondSemibold;
+	font-weight: normal;
+	font-style: normal; }	
+	
+#brief h4, #solution h4 {font-size:14px!important;font-family: VerbCondSemibold!Important;
+	font-weight: normal;
+	font-style: normal;
+	margin-top:0; }	
+	
+	#video {margin-top:20px;}
+	
+	#projectHero { margin-top:20px;padding:40px 0 20px 0px;background:#d0d2d3;background-image:url(../images/projectHero-bg.png); background-repeat:repeat-x; }
+	
+	#projectHero .row-fluid {margin-bottom:30px;}
+	
+	#project .span4 img {margin-bottom:20px!Important;border:1px solid #95A5A5; }
+	
+	.sidebar {margin-left:-20px!important; }
+	
+	.lazy { border:1px solid #ccc;}
+	
+	
+	/*--FOOTER--*/
+	footer {text-align:center;padding:10px;background:#BF392B;color:#fff;font-size:13px;font-family: VerbCondRegular-Bold;
+    font-style: normal;
+    font-weight: normal;
+	margin-top:60px;}
+	
+	footer span {font-family: VerbCondExtralight-Italic;
+	font-weight: normal;
+	font-style: normal; }
+	
+	footer p a{color:#e74c3c }
+	footer p a{ text-decoration:none;
+	/* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	/* ...and now for the proper property */
+  transition:.5s;}
+	
+	
+	footer p a:hover{text-decoration:none;color:#fff }
